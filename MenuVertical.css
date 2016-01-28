@@ -1,0 +1,59 @@
+ul.MenuBarV
+{
+	list-style: none;
+	padding: 0 ;
+}
+
+li.MenuListV
+{
+	float: none; ;
+	text-align: center;
+	width : 190px;
+}
+
+a.MenuItemV
+{
+	display: block;
+	padding: 5px 10px;
+	background: #3D3D3D;
+    text-decoration: none;
+    color: #54FF9F ;
+    border-style: double; 
+}
+
+.menuSubItemV
+{
+	display: none;
+	padding: 5px 10px;
+	list-style: none ;
+	text-decoration: none;
+}
+
+.SubItemV
+{
+	position:relative;
+	list-style: none ;
+	text-decoration: none;
+	color: #00FF7F ;
+}
+
+a.MenuItemV:hover + .menuSubItemV
+{
+	display: block;
+}
+
+.menuSubItemV:hover
+{
+	display: block;
+}
+
+
+
+.style1V
+{
+	font-size: 17px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+	text-shadow: 3px 2px 3px #333334;
+	border-radius: 16px;
+}

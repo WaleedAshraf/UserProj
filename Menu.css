@@ -1,0 +1,80 @@
+ul.MenuBar
+{
+	list-style: none;
+	padding: 0 ;
+}
+
+li.MenuList
+{
+	float: left ;
+	text-align: center;
+	width : 190px;
+}
+
+a.MenuItem
+{
+	display: block;
+	padding: 5px 10px;
+	background: #3D3D3D;
+    text-decoration: none;
+    color: #54FF9F ;
+    border-style: double; 
+}
+
+.menuSubItem
+{
+	display: none;
+	padding: 5px 10px;
+	list-style: none ;
+	text-decoration: none;
+}
+
+.SubItem
+{
+	position:relative;
+	list-style: none ;
+	text-decoration: none;
+	color: #00FF7F ;
+}
+
+a.MenuItem:hover + .menuSubItem
+{
+	display: block;
+}
+
+.menuSubItem:hover
+{
+	display: block;
+}
+
+
+
+.style1
+{
+	font-size: 17px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+	text-shadow: 3px 2px 3px #333334;
+	border-radius: 16px;
+}
+
+li.MenuListV
+{
+	float: none; ;
+	text-align: center;
+	width : 140px;
+}
+
+.style1V
+{
+	background: #00688B;
+	border-radius:10px;
+	width: 11% ;
+	margin-left: 1px ;
+	height: 32% ;
+	font-size: 13px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+	text-shadow: 3px 2px 3px #333334;
+	border-radius: 16px;
+}

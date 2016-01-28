@@ -1,0 +1,78 @@
+<html>
+
+<head>
+
+	<title>Login</title>
+
+
+</head>
+
+<body>
+		<script src = "login.js"></script>
+		<link rel="stylesheet" type="text/css" href="Designcss.css">
+		<link rel="stylesheet" type="text/css" href="buttons.css">
+		<link rel="stylesheet" type="text/css" href="Menu.css">
+		<div class = "style1">
+			<ul class = "MenuBar">
+				<li class = "MenuList"><a class = "MenuItem" id = 'hovereffect'  href="index.html"> Homepage </a></li>
+				<li class = "MenuList">
+					<a class = "MenuItem" id = 'hovereffect' href="#">Login/Signup</a>
+						 <ul class = "menuSubItem">
+						 	<li> <a href= "Login.html" id = 'hovereffect' class = "SubItem">Login</a>
+						 	<li> <a href="Signup.html" id = 'hovereffect'  class = "SubItem">SignUp</a>
+					 	</ul>
+				</li>
+				<li class = "MenuList"><a  id = 'hovereffect' class = "MenuItem" href="#"> News And Events </a></li>
+				<li class = "MenuList"><a  id = 'hovereffect' class = "MenuItem" href="#"> Downloads </a></li>
+				<li class = "MenuList"><a  id = 'hovereffect' class = "MenuItem" href="#"> More </a></li>
+				<li class = "MenuList"><a  id = 'hovereffect' class = "MenuItem" href="#"> About </a></li>
+				<li class = "MenuList">
+					<a class = "MenuItem" id = 'hovereffect' href="#">Account</a>
+						 <ul class = "menuSubItem">
+						 	<li> <a href= "index.html" id = 'hovereffect' class = "SubItem">Profile</a></li>
+						 	<li> <a href= "index.html" id = 'hovereffect' class = "SubItem">Logout</a></li>
+					 	</ul>
+				</li>
+			</ul>
+		</div>
+
+		<br><br><br><br><br>
+
+		<table Align = 'Center'>
+			<tr>
+				<td><h3 class = 'forColor'> Please provide your login and Password .</h3></td>
+			</tr>
+
+		</table>
+
+		<form name = 'loginForm' method='post' action ='SecondServlet' onSubmit="return validate_login()" >
+
+		<table Align = 'Center' border = '1'>
+
+			<tr>
+				<td id = 'tdLogin'> <label>Login/UserName </label> </td>
+				<td id = 'tdLogin'>
+				  <input type = "text" id = "tLogUser" name='tLogUserN2' size = 30 class = "textTransparent"/ >  
+				</td>
+			</tr>
+
+			<tr>
+				<td id = 'tdLogin'> <label>Password </label> </td>
+				<td id = 'tdLogin'>  <input type = "password" name = 'pass' id = "tLogpassword" size = 30 class = "textTransparent">  </td>
+			</tr>
+
+		</table>
+
+		<table Align = 'Center' border = '1'>
+		</table>
+
+		<br>
+		<table Align = 'Center'>
+			<tr>
+				<td> <input type = "Submit" id = 'LoginButton' value = 'Login' class = 'btn1'></td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>

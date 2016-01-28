@@ -1,0 +1,126 @@
+<html>
+
+<head>
+	<title>Signup</title>
+
+</head>
+
+<body>
+
+	<script src = "signup.js"></script>
+	<link rel="stylesheet" type="text/css" href="Designcss.css">
+	<link rel="stylesheet" type="text/css" href="buttons.css">
+	<link rel="stylesheet" type="text/css" href="Menu.css">
+
+		<div class = "style1">
+			<ul class = "MenuBar">
+				<li class = "MenuList"><a class = "MenuItem" id = 'hovereffect'  href="index.html"> Homepage </a></li>
+				<li class = "MenuList">
+					<a class = "MenuItem" id = 'hovereffect' href="#">Login/Signup</a>
+						 <ul class = "menuSubItem">
+						 	<li> <a href= "Login.html" id = 'hovereffect' class = "SubItem">Login</a>
+						 	<li> <a href="Signup.html" id = 'hovereffect'  class = "SubItem">SignUp</a>
+					 	</ul>
+				</li>
+				<li class = "MenuList"><a  id = 'hovereffect' class = "MenuItem" href="#"> News And Events </a></li>
+				<li class = "MenuList"><a  id = 'hovereffect' class = "MenuItem" href="#"> Downloads </a></li>
+				<li class = "MenuList"><a  id = 'hovereffect' class = "MenuItem" href="#"> More </a></li>
+				<li class = "MenuList"><a  id = 'hovereffect' class = "MenuItem" href="#"> About </a></li>
+				<li class = "MenuList">
+					<a class = "MenuItem" id = 'hovereffect' href="#">Account</a>
+						 <ul class = "menuSubItem">
+						 	<li> <a href= "index.html" id = 'hovereffect' class = "SubItem">Profile</a>
+						 	<li> <a href= "index.html" id = 'hovereffect' class = "SubItem">Logout</a>
+					 	</ul>
+				</li>
+			</ul>
+		</div>
+
+		<br><br><br><br>
+
+		<h3 class = 'forColor' Align = 'Center'> Please Provide Following information.&#160&#160&#160&#160&#160&#160All Fields are Required.</h3>
+		<form name = 'SignupForm' method='post' action = 'firstServlet' onSubmit="return validate_login()"  >
+			<div class = 'field'>
+
+				<table Align = 'Center'  >
+					<tr>
+						<td id = 'tdSup' > <label>User Name: </label> </td>
+						<td id = 'tdSup'>  <input type = "Text" id = "tfUserName" name='tfn_UserName' class = "textTransparent"/>  </td>
+						<td id - 'tdSup'> <input type = "button" id = 'butCava' value = "Check Availibility"></td>
+					</tr>
+
+					<br>
+					<tr >
+						<td id = 'tdSup'> <label>First Name: </label> </td>
+						<td id = 'tdSup'>  <input type = "Text" id = "tff_Name" name='tffn_Name' class = "textTransparent"/>  </td>
+					</tr>
+
+					<tr>
+						<td id = 'tdSup'> <label>Last Name: </label> </td>
+						<td id = 'tdSup'>  <input type = "Text" id = "tfL_Name" name='tfLn_Name' class = "textTransparent"/>  </td>
+					</tr>
+
+					<tr class = 'trform'>
+						<td id = 'tdSup'> <label>Password: </label> </td>
+						<td id = 'tdSup'>  <input type = "password" id = "tpassword" name = 'passwordd' class = "textTransparent">  </td>
+					</tr>
+
+					<tr class = 'trform'>
+						<td id = 'tdSup'> <label>Confirm Password: </label> </td>
+						<td id = 'tdSup'>  <input type = "password" id = "tCpassword" class = "textTransparent">  </td>
+					</tr>
+					<br>
+
+					<tr>
+						<td id = 'tdSup'> <label>Email Id: </label> </td>
+						<td id = 'tdSup'>  
+							<input type = "email" id = "tfEmail" name = 'emaill' class = "textTransparent" >  
+						</td>
+					</tr>
+
+					<tr>
+						<td id = 'tdSup'> <label>Phone Number: </label> </td>
+						<td id = 'tdSup'>  <input type = "Text" id = "tfpNo" name = "phone" class = "textTransparent">  </td>
+					</tr>
+
+					<tr class = 'trform'>
+						<td id = 'tdSup'> <label>Date of Birth: </label> </td>
+						<td id = 'tdSup'>  <input type = "date" name = 'dob' id = "tfdate" class = "textTransparent">  </td>
+					</tr>
+					<tr>
+						<td id = 'tdSup'> <label>Account Type: </label> </td>
+						<td id = 'tdSup'>
+							<select class = "options" name = 'ooptions' class = "textTransparent">
+								<option  value = "Ordinary" selected = "selected">Ordinary</option>
+								<option  value = "Teaching/Staff">Teaching/Staff</option>
+							</select>
+						</td>
+					</tr>
+					<br>
+					<tr>
+						<td id = 'tdSup'> <label>Address: </label> </td>
+						<td id = 'tdSup'>  
+							<input type = "Text" id = "tfAdd" name = 'Addresss' class = "textTransparent">  
+						</td>
+					</tr>
+					<br>
+					<tr>
+						<td id = 'tdSup'> Gender : </td>
+						<td id = 'tdSup'> Male<input type = 'radio' name = 'Gender' value = 'Male' id = 'radioMale' checked="checked"> </td>
+						<td id = 'tdSup'>  Female<input type = 'radio' value = 'Female' name = 'Gender' id = 'radioFemale'>  </td>
+					</tr>
+				</table>
+			</div>
+
+			<br>
+			<table Align = 'Center'>
+				<tr>
+					<td  width = 100px><input type = "Submit" id = 'Submitb' value = 'SignUp' class = 'btn1' ></td>
+					<td width = 100px><input type = "Reset" id = 'Resetb' value = 'Reset' class = 'btn1'></td>
+				</tr>
+			</table>
+		</form>
+
+</body>
+
+</html>

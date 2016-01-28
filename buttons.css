@@ -1,0 +1,17 @@
+.btn1 {
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 13px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 29px;
+  background: #32b4b8;
+  padding: 8px 22px 10px 20px;
+  border: solid #22c949 2px;
+  text-decoration: none;
+}
+
+.btn1:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
